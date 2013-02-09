@@ -93,7 +93,15 @@ end
 When /^(?:|I )uncheck "([^"]*)"$/ do |field|
   uncheck(field)
 end
+#added
+When /^ And (?:|I )check "([^"]*)"$/ do |field|
+  check(field)
+end
 
+When /^ And (?:|I )uncheck "([^"]*)"$/ do |field|
+  uncheck(field)
+end
+#added
 When /^(?:|I )choose "([^"]*)"$/ do |field|
   choose(field)
 end
